@@ -11,7 +11,7 @@ class Index(MethodView):
         articles = Article.query.order_by(Article.id.desc()).limit(5).all()
 
         return render_template('index.html',
-                               title='Home | Aukcije Online',
+                               title='Home',
                                session=session.get('username'),
                                articles=articles,
                                search_form=SearchForm())

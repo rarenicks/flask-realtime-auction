@@ -21,7 +21,7 @@ class Search(MethodView):
             return redirect(url_for('index'))
 
         return render_template('search.html',
-                               title='Search | Aukcije Online',
+                               title='Search',
                                articles=articles,
                                session=session.get('username'))
 

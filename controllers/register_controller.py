@@ -15,7 +15,7 @@ class Register(MethodView):
 
         registration_form = RegisterForm()
         return render_template('register.html',
-                               title='Register | Aukcije Online',
+                               title='Register ',
                                registration_form=registration_form,
                                session=session.get('username'))
 

@@ -15,7 +15,7 @@ class User_(MethodView):
         articles = Article.query.filter_by(user_id=user.id).all()
 
         return render_template('user.html',
-                               title='User | Aukcije Online',
+                               title='User',
                                user=user,
                                articles=articles)
 

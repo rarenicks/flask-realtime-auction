@@ -20,7 +20,7 @@ class Profile(MethodView):
         articles = Article.query.filter_by(user_id=user.id).all()
 
         return render_template('profile.html',
-                               title='My Profile | Aukcije Online',
+                               title='My Profile',
                                user=user,
                                articles=articles)
 

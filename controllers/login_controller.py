@@ -15,7 +15,7 @@ class Login(MethodView):
 
         login_form = LoginForm()
         return render_template('login.html',
-                               title='Login | Aukcije Online',
+                               title='Login',
                                login_form=login_form,
                                session=session.get('username'))
 

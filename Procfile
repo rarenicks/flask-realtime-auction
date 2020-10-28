@@ -1,1 +1,1 @@
-web: gunicorn -k eventlet aukcija:app
+web: gunicorn -k eventlet auction:app

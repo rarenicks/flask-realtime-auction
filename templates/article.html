@@ -46,14 +46,14 @@
                         <tr>
                             <th>{{ loop.index }}</th>
                             <td>{{ user.username }}</td>
-                            <td>{{ offers_by_article[loop.index0].price }} KM</td>
+                            <td>{{ offers_by_article[loop.index0].price }} </td>
                         </tr>
                     {% endfor %}
                 {% else %}
                     <tr>
                         <th scope="row">0</th>
-                        <td>There is no offers on this article</td>
-                        <td>0 KM</td>
+                        <td>There is no Bids on this article</td>
+                        <td>0 </td>
                     </tr>
                 {% endif %}
                 </tbody>

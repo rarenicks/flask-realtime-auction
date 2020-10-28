@@ -31,7 +31,7 @@ class Article_(MethodView):
             session_username = None
 
         return render_template('article.html',
-                               title='Article | Aukcije Online',
+                               title='Article',
                                article=article,
                                user=user,
                                offers_by_article=offers_by_article,

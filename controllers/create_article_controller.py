@@ -19,7 +19,7 @@ class CreateArticle(MethodView):
             return redirect(url_for('index'))
 
         return render_template('create_article.html',
-                               title='Create Article | Aukcije Online',
+                               title='Create Article',
                                article_form=article_form)
 
     def post(self):
